@@ -10,7 +10,7 @@ const AdminDashboard = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/users?page=${currentPage}&search=${search}`);
+      const response = await axios.get(`https://social-media-wl1d.onrender.com/api/users?page=${currentPage}&search=${search}`);
       setUsers(response.data.users);
       setTotalPages(response.data.totalPages);
     } catch (error) {
