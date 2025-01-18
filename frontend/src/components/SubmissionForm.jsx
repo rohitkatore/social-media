@@ -37,7 +37,7 @@ const SubmissionForm = () => {
         data.append('images', image);
       });
 
-      await axios.post('http://localhost:5000/api/users', data);
+      await axios.post('https://social-media-wl1d.onrender.com/api/users', data);
       setMessage('Submission successful!');
       setFormData({ name: '', socialMediaHandle: '', images: [] });
     } catch (error) {
